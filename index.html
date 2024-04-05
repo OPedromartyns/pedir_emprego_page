@@ -88,8 +88,8 @@ let moveX = 0;
 let moveY = 0;
 
 botao.addEventListener("mouseover", function () {
-    moveX = (Math.random() * 1000 - 700); //gera um número entre -400 e 400 para atribuir ao movimento no eixo X do botão (esse valor é ideal pro botão não sumir da tela nessas proporções desse código, mas pode mudar conforme você faça sua tela)
-    moveY = (Math.random() * 501 - 400); //aqui é o mesmo esquema de random, mas é de -400 a 0, respeitando o valor pra não sumir da tela, que acaba tendo um limite diferente do eixo X
+    moveX = (Math.random() * 400 - 400); //gera um número entre -400 e 400 para atribuir ao movimento no eixo X do botão (esse valor é ideal pro botão não sumir da tela nessas proporções desse código, mas pode mudar conforme você faça sua tela)
+    moveY = (Math.random() * 401 - 400); //aqui é o mesmo esquema de random, mas é de -400 a 0, respeitando o valor pra não sumir da tela, que acaba tendo um limite diferente do eixo X
 
     botao.style.transform = `translate(${moveX}px, ${moveY}px)`; //atribui os valores randomicos ao botão aplicando um translate no css dele
 })
